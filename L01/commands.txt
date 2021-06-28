@@ -4,7 +4,12 @@ cd .. - is used to move backwards
 less - prints out the contents of a file
 pwd - shows the file path of your working directory
 mv - move objects to a new location
-help - list of available commands
-man - provides details on how to use a specific command
-tellme combo - gives combination for AthenaCluster
+help - provides more information on available commands
+man - provides manual on how to use a specific command
 add - can add new lockers if you have permission
+Sudo - allows programs to be run with security privilege of another user
+grep - Searches for a pattern in each file
+rm - removes files or directories
+mkdir - creates new directories
+touch - creates timestamps of a file
+cp - copies a file or folder
