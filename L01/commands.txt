@@ -1,6 +1,6 @@
 ls - lists the contents of your current directory
 cd - is used to change directories
-cd .. - is used to move backwards
+cd .. - is used to move backwards in the directory
 less - prints out the contents of a file
 pwd - shows the file path of your working directory
 mv - move objects to a new location
