@@ -1,3 +1,6 @@
 [submodule "1XC3_L03"]
 	path = 1XC3_L03
 	url = https://github.com/arielm20/1XC3_L03.git
+[submodule "L03/1XC3_L03"]
+	path = L03/1XC3_L03
+	url = https://github.com/arielm20/1XC3_L03.git
