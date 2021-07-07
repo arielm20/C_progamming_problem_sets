@@ -15,7 +15,7 @@ if [ "$2" -eq 1 ] ; then
      fi
 elif [ "$2" -eq 2 ] ; then
      if [ -e "$FILE" ] ; then
-	mkdir backup/"$FILE"
+	mkdir backup
 	mv "$FILE" backup
      fi
 elif [ "$2" -eq 3 ] ; then
@@ -24,10 +24,11 @@ elif [ "$2" -eq 3 ] ; then
 	rm backup/"$FILE"
     fi
 fi
-
-#elif [ $@ -gt 3 ] ; then
-   # touch excess.txt
-    # loop to output each parameter on its own line in excess.txt
-# fi
+if [ $# -gt 3 ] ; then
+    touch excess.txt
+    for i in "${@:4}" ; do
+	echo "$i" >> excess.txt
+    done
+fi
      
 echo "Finished"
