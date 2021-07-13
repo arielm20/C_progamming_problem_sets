@@ -1,0 +1,4 @@
+1. Both functions execute instructions repeadly until a condition is met and an output is produced. recursive algorithm calls itself during the execution of the program, thus the function repeats multiple time until a condition is met. In an iterative algorithm the number of iterations is defined and therefore can have less repetitions. 
+2. for both algorithsm the most executed line is: for (int j = 0; j < 50; j++)
+3. Yes
+4. during the compilation of the program
