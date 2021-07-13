@@ -1,15 +1,15 @@
-Search Value	Linear Search	Binary Search	Fibonacci Search	Notes
-1	0.016	0.06	0.013	"Binary, the target value is in one of the first searched intervals"
-4	0.08	0.03	0.02	"Linear, the targer value is found early in the array"
-22	0.016	0.01	0.015	"Fibonacci, target value is near a fibonacci number"
-37	0.036	0.012	0.014	"Binary, the target value is in one of the first intervals"
-22906	0.014	0.022	0.011	"Fibonacci, target value is near a fibonacci number"
-53757	0.011	0.008	0.007	"Fibonacci, target value is near a fibonacci number"
-112591	0.034	0.01	0.01	"Fibonacci and Binary are equal, target value is both in a fiobnacci interval and binary interval"
-361940	0.09	0.014	0.028	"Linear, the target value is neither in a fibonacci or binary interval"
-475513	0.09	0.022	0.008	"Fibonacci, the target value is in a fibonacci interval"
-893766	0.008	0.014	0.008	"Linear and Fibonnaci are equal, target value is not in a binary interval"
-996637	0.007	0.033	0.011	"Linear, the target value is neither in a fibonacci or binary interval"
-996639	0.012	0.022	0.009	"Fibonacci, the target value is in a fibonacci interval"
-996652	0.016	0.01	0.032	"Binary, the target value is in a binary interval"
--996652	0.015	0.02	0.011	"Fibonacci, the target value is in a fibonacci interval"
+"Search Value	Linear Search	Binary Search	Fibonacci Search	Notes",
+"1	0.016	0.06	0.013	Binary", the target value is in one of the first searched intervals
+"4	0.08	0.03	0.02	Linear", the targer value is found early in the array
+"22	0.016	0.01	0.015	Fibonacci", target value is near a fibonacci number
+"37	0.036	0.012	0.014	Binary"," the target value is in one of the first intervals"""
+"22906	0.014	0.022	0.011	Fibonacci", target value is near a fibonacci number
+"53757	0.011	0.008	0.007	Fibonacci", target value is near a fibonacci number
+"112591	0.034	0.01	0.01	Fibonacci and Binary are equal", target value is both in a fiobnacci interval and binary interval
+"361940	0.09	0.014	0.028	Linear", the target value is neither in a fibonacci or binary interval
+"475513	0.09	0.022	0.008	Fibonacci", the target value is in a fibonacci interval
+"893766	0.008	0.014	0.008	Linear and Fibonnaci are equal", target value is not in a binary interval
+"996637	0.007	0.033	0.011	Linear", the target value is neither in a fibonacci or binary interval
+"996639	0.012	0.022	0.009	Fibonacci", the target value is in a fibonacci interval
+"996652	0.016	0.01	0.032	Binary", the target value is in a binary interval
+"-996652	0.015	0.02	0.011	Fibonacci", the target value is in a fibonacci interval
