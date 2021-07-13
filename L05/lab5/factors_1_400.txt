@@ -5,9 +5,9 @@ Each sample counts as 0.01 seconds.
 
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
-  0.00      0.00     0.00        1     0.00     0.00  allFactors_rec
-  0.00      0.00     0.00        1     0.00     0.00  factor_rec
-  0.00      0.00     0.00        1     0.00     0.00  primeFactors_rec
+  0.00      0.00     0.00        1     0.00     0.00  allFactors_itr
+  0.00      0.00     0.00        1     0.00     0.00  factor_itr
+  0.00      0.00     0.00        1     0.00     0.00  primeFactors_itr
   0.00      0.00     0.00        1     0.00     0.00  printArray2D
 
  %         the percentage of the total running time of the
@@ -49,23 +49,19 @@ notice and this notice are preserved.
 granularity: each sample hit covers 2 byte(s) no time propagated
 
 index % time    self  children    called     name
-                                   2             allFactors_rec [1]
-                0.00    0.00       1/1           factor_rec [2]
-[1]      0.0    0.00    0.00       1+2       allFactors_rec [1]
-                                   2             allFactors_rec [1]
+                0.00    0.00       1/1           factor_itr [2]
+[1]      0.0    0.00    0.00       1         allFactors_itr [1]
 -----------------------------------------------
                 0.00    0.00       1/1           main [13]
-[2]      0.0    0.00    0.00       1         factor_rec [2]
-                0.00    0.00       1/1           primeFactors_rec [3]
-                0.00    0.00       1/1           allFactors_rec [1]
+[2]      0.0    0.00    0.00       1         factor_itr [2]
+                0.00    0.00       1/1           primeFactors_itr [3]
+                0.00    0.00       1/1           allFactors_itr [1]
                 0.00    0.00       1/1           printArray2D [4]
 -----------------------------------------------
-                                   3             primeFactors_rec [3]
-                0.00    0.00       1/1           factor_rec [2]
-[3]      0.0    0.00    0.00       1+3       primeFactors_rec [3]
-                                   3             primeFactors_rec [3]
+                0.00    0.00       1/1           factor_itr [2]
+[3]      0.0    0.00    0.00       1         primeFactors_itr [3]
 -----------------------------------------------
-                0.00    0.00       1/1           factor_rec [2]
+                0.00    0.00       1/1           factor_itr [2]
 [4]      0.0    0.00    0.00       1         printArray2D [4]
 -----------------------------------------------
 
@@ -159,5 +155,5 @@ notice and this notice are preserved.
 
 Index by function name
 
-   [1] allFactors_rec          [3] primeFactors_rec
-   [2] factor_rec              [4] printArray2D
+   [1] allFactors_itr          [3] primeFactors_itr
+   [2] factor_itr              [4] printArray2D
