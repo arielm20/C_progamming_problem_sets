@@ -1,15 +1,15 @@
 Search Value,Linear Search,Binary Search,Fibonacci Search,Notes
-1,2200,2112,2112,
-4,2224,2036,2120,
-22,2108,2272,2200,
-37,2268,2276,2172,
-22906,2112,2268,2040,
-53757,2164,2108,2120,
-112591,2276,2168,2272,
-361940,2280,2272,2108,
-475713,2112,2200,2276,
-896766,2128,2264,2112,
-996637,2276,2268,2268,
-996639,2284,2276,2272,
-996652,2112,2228,2268,
--996652,2224,2276,2112,
+1,2200,2112,2112,Binary and Fibonacci have lower max res set size as they are the more efficient search tool
+4,2224,2036,2120,Binary has lower max res set size as it is the more efficient search tool
+22,2108,2272,2200,Linear has lower max res set size as it is the more efficient search tool
+37,2268,2276,2172,Fibonacci has lower max res set size as it is the more efficient search tool
+22906,2112,2268,2040,Fibonacci has lower max res set size as it is the more efficient search tool
+53757,2164,2108,2120,Binary has lower max res set size as it is the more efficient search tool
+112591,2276,2168,2272,Binary has lower max res set size as it is the more efficient search tool
+361940,2280,2272,2108,Fibonacci has lower max res set size as it is the more efficient search tool
+475713,2112,2200,2276,Linear has lower max res set size as it is the more efficient search tool
+896766,2128,2264,2112,Fibonacci has lower max res set size as it is the more efficient search tool
+996637,2276,2268,2268,Binary and Fibonacci have lower max res set size as they are the more efficient search tool
+996639,2284,2276,2272,Fibonacci has lower max res set size as it is the more efficient search tool
+996652,2112,2228,2268,Linear has lower max res set size as it is the more efficient search tool
+-996652,2224,2276,2112,Fibonacci has lower max res set size as it is the more efficient search tool
