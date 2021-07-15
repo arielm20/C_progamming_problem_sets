@@ -1,0 +1,12 @@
+if [ -x /usr/libexec/path_helper ]; then
+	eval `/usr/libexec/path_helper -s`
+fi
+
+if [ "${BASH-no}" != "no" ]; then
+	[ -r /etc/bashrc ] && . /etc/bashrc
+fi
+------
+6:17  up 36 mins, 2 users, load averages: 4.32 4.02 7.63
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+arielmotsenyat console  -                15:41      35 -
+arielmotsenyat s000     -                15:46       - w
