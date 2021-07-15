@@ -1,0 +1,32 @@
+/Users/arielmotsenyat
+/Users/arielmotsenyat/Desktop/School stuff/CS1XC3/CS1XC3/L06
+arielmotsenyat
+/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/Users/arielmotsenyat/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public
+-bash: PATH: command not found
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/3z/df6nb1gj66bgbqq69qht7zbm0000gn/T/
+CONDA_SHLVL=1
+CONDA_PROMPT_MODIFIER=(base) 
+TERM_PROGRAM_VERSION=440
+OLDPWD=/Users/arielmotsenyat/Desktop/School stuff/CS1XC3/CS1XC3
+TERM_SESSION_ID=F204BA93-5515-4EE7-B64E-387878F4EA56
+USER=arielmotsenyat
+CONDA_EXE=/opt/anaconda3/bin/conda
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.PYFBOIuNxj/Listeners
+_CE_CONDA=
+PATH=/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/Users/arielmotsenyat/anaconda3/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public
+CONDA_PREFIX=/opt/anaconda3
+__CFBundleIdentifier=com.apple.Terminal
+PWD=/Users/arielmotsenyat/Desktop/School stuff/CS1XC3/CS1XC3/L06
+LANG=en_CA.UTF-8
+XPC_FLAGS=0x0
+_CE_M=
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/arielmotsenyat
+CONDA_PYTHON_EXE=/opt/anaconda3/bin/python
+LOGNAME=arielmotsenyat
+CONDA_DEFAULT_ENV=base
+_=/usr/bin/env
