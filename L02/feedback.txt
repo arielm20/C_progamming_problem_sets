@@ -4,8 +4,8 @@ Step 3 Success
 Step 4 Success
 Step 5 Success
 Step 6 Fail
-Step 7 Fail
+Step 7 Success
 Step 8 Success
 Step 9 Success
 Step 10 Success
-Total: 7 / 10
+Total: 8 / 10
