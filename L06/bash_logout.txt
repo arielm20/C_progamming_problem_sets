@@ -1,0 +1,5 @@
+# ~/.bash_logout                                                                                         
+cd ./CS1XC3/
+git add -all
+git commit -m"Shell Logout Commit"
+git push
