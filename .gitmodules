@@ -4,3 +4,6 @@
 [submodule "A1/1XC3_A1"]
 	path = A1/1XC3_A1
 	url = https://github.com/arielm20/1XC3_A1.git
+[submodule "L07/1XC3_L07"]
+	path = L07/1XC3_L07
+	url = https://github.com/arielm20/1XC3_L07.git
