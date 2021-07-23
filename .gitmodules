@@ -7,3 +7,6 @@
 [submodule "L07/1XC3_L07"]
 	path = L07/1XC3_L07
 	url = https://github.com/arielm20/1XC3_L07.git
+[submodule "L08/hello-github-actions"]
+	path = L08/hello-github-actions
+	url = https://github.com/arielm20/hello-github-actions.git
