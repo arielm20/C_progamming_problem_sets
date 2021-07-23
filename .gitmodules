@@ -10,3 +10,6 @@
 [submodule "L08/hello-github-actions"]
 	path = L08/hello-github-actions
 	url = https://github.com/arielm20/hello-github-actions.git
+[submodule "L08/CS1XC3_L08_P3"]
+	path = L08/CS1XC3_L08_P3
+	url = https://github.com/arielm20/CS1XC3_L08_P3.git
