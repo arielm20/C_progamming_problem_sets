@@ -1,0 +1,322 @@
+digraph a {
+
+  node [shape=plaintext nodesep=0.5 ranksep = 0.5]
+
+  {rank = same s1 s2 s3 a1 a2 a3}
+  {rank = same t1 t2 t3 b1 b2 b3}
+  {rank = same u1 u2 u3 c1}
+  {rank = same v1 d1}
+  {rank = same e1}
+ 
+
+  s1 -> t1 -> u1 -> v1 [color = "white" weight=10000]
+  s2 -> t2 -> u2 [color = "white" weight=10000]
+  s3 -> t3 -> u3 [color = "white" weight=10000]
+  a1 -> b1 -> c1 -> d1 -> e1 [color = "white" weight=10000]
+  a2 -> b2 [color = "white" weight=10000]
+  a3 -> b3 [color = "white" weight=10000]
+
+s1:n -> s1:n [color = "white" label = "begin h = 2 sort"]
+
+  s1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">9</td>
+	<td port="1">4</td>
+	<td port="2">7</td>
+	<td bgcolor="lightblue" port="3">1</td>
+	<td port="4">7</td>
+	<td port="5">3</td>
+	<td bgcolor="lightblue" port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+s1 -> s2 [color = "blue"]
+
+//s1:0:s -> s2:0:s [color = "red"]
+//s1:3:s -> s2:3:s [color = "red"]
+//s1:6:s -> s2:6:s [color = "red"]
+
+  s2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">9</td>
+	<td bgcolor="lightblue" port="3">1</td>
+	<td bgcolor="lightblue" port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+s2->s3 [label = "insertion sort"]
+
+  s3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="green" port="3">6</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+s3:e -> s3:e [color = "white" label = "swaps: 2\nexaminations : 3" fontcolor = "red"]
+s3:s -> t1:n
+
+//s3:0:s -> t1:0:n 
+//s3:3:s -> t1:3:n 
+//s3:6:s -> t1:6:n 
+
+  t1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="lightblue" port="1">4</td>
+	<td port="2">7</td>
+	<td bgcolor="green" port="3">6</td>
+	<td bgcolor="lightblue" port="4">7</td>
+	<td port="5">3</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+t1 -> t2 [color = "blue"]
+
+//t1:0:s -> t2:0:s [color = "red"]
+//t1:3:s -> t2:3:s [color = "red"]
+
+  t2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">4</td>
+	<td bgcolor="lightblue" port="3">7</td>
+       </tr>
+     </table>>
+  ];
+
+t2 -> t3 [label="insertion sort"]
+t3:e -> t3:e [color = "white" label = "swaps: 0\nexaminations : 1" fontcolor = "red"]
+
+  t3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">4</td>
+	<td bgcolor="green" port="3">7</td>
+       </tr>
+     </table>>
+  ];
+
+t3:s -> u1:n
+
+
+  u1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="green" port="1">4</td>
+	<td bgcolor="lightblue" port="2">7</td>
+	<td bgcolor="green" port="3">6</td>
+	<td bgcolor="green" port="4">7</td>
+	<td bgcolor="lightblue" port="5">3</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+u1 -> u2 [color = "blue"]
+
+//t1:0:s -> t2:0:s [color = "red"]
+//t1:3:s -> t2:3:s [color = "red"]
+
+  u2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">7</td>
+	<td bgcolor="lightblue" port="3">3</td>
+       </tr>
+     </table>>
+  ];
+
+u2 -> u3 [label="insertion sort"]
+
+  u3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">3</td>
+	<td bgcolor="green" port="3">7</td>
+       </tr>
+     </table>>
+  ];
+
+u3:e -> u3:e [color = "white" label = "swaps: 1\nexaminations : 1" fontcolor = "red"]
+u3 -> v1 
+
+  v1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="green" port="1">4</td>
+	<td bgcolor="green" port="2">3</td>
+	<td bgcolor="green" port="3">6</td>
+	<td bgcolor="green" port="4">7</td>
+	<td bgcolor="green" port="5">7</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+v1 -> a1 [label = "begin h = 1 sort"]
+
+  a1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">1</td>
+	<td port="1">4</td>
+	<td bgcolor="lightblue" port="2">3</td>
+	<td port="3">6</td>
+	<td bgcolor="lightblue" port="4">7</td>
+	<td port="5">7</td>
+	<td bgcolor="lightblue" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+a1 -> a2 [color = "blue"]
+
+  a2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">1</td>
+	<td bgcolor="lightblue" port="2">3</td>
+	<td bgcolor="lightblue" port="4">7</td>
+	<td bgcolor="lightblue" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+a2 -> a3 [label = "insertion sort"]
+
+  a3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="green" port="2">3</td>
+	<td bgcolor="green" port="4">7</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+a3:e -> a3:e [color = "white" label = "swaps: 0\nexaminations : 3" fontcolor = "red"]
+a3 -> b1
+
+  b1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="lightblue" port="1">4</td>
+	<td bgcolor="green" port="2">3</td>
+	<td bgcolor="lightblue" port="3">6</td>
+	<td bgcolor="green" port="4">7</td>
+	<td bgcolor="lightblue" port="5">7</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+b1 -> b2 [color = "blue"]
+
+  b2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="1">4</td>
+	<td bgcolor="lightblue" port="3">6</td>
+	<td bgcolor="lightblue" port="5">7</td>
+       </tr>
+     </table>>
+  ];
+
+b3:e -> b3:e [color = "white" label = "swaps: 0\nexaminations : 2" fontcolor = "red"]
+b2 -> b3 [label = "insertion sort"]
+
+  b3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="1">4</td>
+	<td bgcolor="green" port="3">6</td>
+	<td bgcolor="green" port="5">7</td>
+       </tr>
+     </table>>
+  ];
+
+b3 -> c1 [label = "h = 1 sorted"]
+
+  c1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="green" port="1">4</td>
+	<td bgcolor="green" port="2">3</td>
+	<td bgcolor="green" port="3">6</td>
+	<td bgcolor="green" port="4">7</td>
+	<td bgcolor="green" port="5">7</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+c1 -> d1 [label = "begin h = 0 sort"]
+
+  d1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">1</td>
+	<td bgcolor="lightblue" port="1">4</td>
+	<td bgcolor="lightblue" port="2">3</td>
+	<td bgcolor="lightblue" port="3">6</td>
+	<td bgcolor="lightblue" port="4">7</td>
+	<td bgcolor="lightblue" port="5">7</td>
+	<td bgcolor="lightblue" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+d1 -> e1 [label = "insertion sort"]
+
+  e1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green" port="0">1</td>
+	<td bgcolor="green" port="1">3</td>
+	<td bgcolor="green" port="2">4</td>
+	<td bgcolor="green" port="3">6</td>
+	<td bgcolor="green" port="4">7</td>
+	<td bgcolor="green" port="5">7</td>
+	<td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+  
+e1:e -> e1:e [color = "white" label = "swaps: 1\nexaminations : 7" fontcolor = "red"]
+
+}

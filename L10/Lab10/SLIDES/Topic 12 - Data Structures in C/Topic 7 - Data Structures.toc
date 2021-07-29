@@ -1,0 +1,6 @@
+\beamer@sectionintoc {2}{Structured Programming}{3}{0}{1}
+\beamer@sectionintoc {3}{Bitwise Operations}{12}{0}{2}
+\beamer@sectionintoc {4}{Two's Complement}{20}{0}{3}
+\beamer@sectionintoc {5}{Graph Theory}{25}{0}{4}
+\beamer@sectionintoc {6}{Linked Lists}{29}{0}{5}
+\beamer@sectionintoc {7}{Example: Binary Trees}{36}{0}{6}

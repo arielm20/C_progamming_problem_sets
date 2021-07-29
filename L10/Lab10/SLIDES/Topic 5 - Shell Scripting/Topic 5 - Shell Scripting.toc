@@ -1,0 +1,8 @@
+\beamer@sectionintoc {2}{Shell Scripting}{3}{0}{1}
+\beamer@sectionintoc {3}{Variables and Assignment}{7}{0}{2}
+\beamer@sectionintoc {4}{Environment Variables}{13}{0}{3}
+\beamer@sectionintoc {5}{Miscellaneous Complications}{16}{0}{4}
+\beamer@sectionintoc {6}{Command Substitution}{20}{0}{5}
+\beamer@sectionintoc {7}{Conditional Control Flow}{23}{0}{6}
+\beamer@sectionintoc {8}{Iterative Control Flow}{26}{0}{7}
+\beamer@sectionintoc {9}{Errata}{28}{0}{8}

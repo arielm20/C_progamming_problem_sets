@@ -1,0 +1,14 @@
+digraph a {
+
+node [shape=oval style=filled fillcolor=white]
+
+
+R [label = "X"]
+1 [label = "<= X"]
+2 [label = "> X"]
+
+{rank = same 1 2}
+
+R -> 1 
+R -> 2 
+}

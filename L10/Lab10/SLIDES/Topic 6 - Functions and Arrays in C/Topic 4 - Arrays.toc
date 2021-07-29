@@ -1,0 +1,7 @@
+\beamer@sectionintoc {2}{Arrays: Like Tuples, But More Annoying}{3}{0}{1}
+\beamer@sectionintoc {3}{Strings are Character Arrays!}{15}{0}{2}
+\beamer@sectionintoc {4}{Bubblesort!}{20}{0}{3}
+\beamer@sectionintoc {5}{Big O Notation}{26}{0}{4}
+\beamer@sectionintoc {6}{Insertion Sort!}{31}{0}{5}
+\beamer@sectionintoc {7}{Shell Sort!}{36}{0}{6}
+\beamer@sectionintoc {8}{Search Algorithms}{43}{0}{7}

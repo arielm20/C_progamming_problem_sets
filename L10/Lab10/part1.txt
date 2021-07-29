@@ -1,0 +1,26 @@
+1. abc
+1 1/2. \d23
+2. \.
+3. [cmf][a][n]
+4. [hd^b][o][g]
+5. [A-C]
+6. z{3,5}
+7. aa+b*c+
+8. \d+ files? found\?
+9. \d.\s\t?
+10. Mission: successful$
+11. ^(file.+)\.pdf$
+12. (\w+ (\d+))
+13. (\d+)x(\d+)
+14. I love (cats|dogs)
+15. .*
+
+Additional Problems:
+1. ^-?\d+(,\d+)*(\.\d+(e\d+)?)?$
+2. (\d{3})
+3. ^([\w\.]*)
+4. <(\w+)
+5. (\w+)\.(jpg|png|gif)$
+6. ^\s*(.*)\s*$
+7. (\w+)\(([\w\.]+):(\d+)\)
+8. (\w+)://([\w\-\.]+)(:(\d+))?

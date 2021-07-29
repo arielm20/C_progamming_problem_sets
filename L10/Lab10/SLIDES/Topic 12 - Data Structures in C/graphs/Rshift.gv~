@@ -1,0 +1,53 @@
+digraph a {
+
+  node [shape=plaintext nodesep=0.5 ranksep = 0.5]
+
+  s1 -> s2 [color = white weight=10000]
+
+  s1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="white" port="0">0</td>
+	<td bgcolor="white" port="1">1</td>
+	<td bgcolor="white" port="2">1</td>
+	<td bgcolor="white" port="3">0</td>
+	<td bgcolor="white" port="4">0</td>
+	<td bgcolor="white" port="5">1</td>
+	<td bgcolor="white" port="6">1</td>
+	<td bgcolor="white" port="7">0</td>
+       </tr>
+     </table>>
+  ];
+
+  s2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="white" port="0">0</td>
+	<td bgcolor="white" port="1">0</td>
+	<td bgcolor="white" port="2">1</td>
+	<td bgcolor="white" port="3">1</td>
+	<td bgcolor="white" port="4">0</td>
+	<td bgcolor="white" port="5">0</td>
+	<td bgcolor="white" port="6">1</td>
+	<td bgcolor="white" port="7">1</td>
+       </tr>
+     </table>>
+  ];
+
+node [shape=doublecircle nodesep=0.5 ranksep = 0.5]
+
+Zero -> s2:0:n
+s1:0:s -> s2:1:n
+s1:1:s -> s2:2:n
+s1:2:s -> s2:3:n
+s1:3:s -> s2:4:n
+s1:4:s -> s2:5:n
+s1:5:s -> s2:6:n
+s1:6:s -> s2:7:n
+s1:7:s -> X
+
+
+
+}

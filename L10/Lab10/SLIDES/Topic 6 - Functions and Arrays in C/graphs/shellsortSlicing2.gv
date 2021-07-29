@@ -1,0 +1,100 @@
+digraph a {
+
+  node [shape=plaintext nodesep=0.5 ranksep = 0.5]
+
+  s1 -> s2 [weight=10000]
+
+  s1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="red">0</td>
+	<td bgcolor="orange">1</td>
+	<td bgcolor="yellow">2</td>
+	<td bgcolor="green">3</td>
+	<td bgcolor="red">4</td>
+	<td bgcolor="orange">5</td>
+	<td bgcolor="yellow">6</td>
+	<td bgcolor="green">7</td>
+	<td bgcolor="red">8</td>
+	<td bgcolor="orange">9</td>
+	<td bgcolor="yellow">10</td>
+	<td bgcolor="green">11</td>
+       </tr>
+     </table>>
+  ];
+
+s1:n -> s1:n [color = "white" label = "h = 3"]
+
+  s2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="red">0</td>
+	<td bgcolor="orange">1</td>
+	<td bgcolor="yellow">2</td>
+	<td bgcolor="green">3</td>
+       </tr><tr>
+	<td bgcolor="red">4</td>
+	<td bgcolor="orange">5</td>
+	<td bgcolor="yellow">6</td>
+	<td bgcolor="green">7</td>
+       </tr><tr>
+	<td bgcolor="red" port="0">8</td>
+	<td bgcolor="orange" port="1">9</td>
+	<td bgcolor="yellow" port="2">10</td>
+	<td bgcolor="green" port="3">11</td>
+       </tr>
+     </table>>
+  ];
+
+s2:0:s -> s20:n
+s2:1:s -> s21:n
+s2:2:s -> s22:n
+s2:3:s -> s23:n
+
+  s20 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="red">0</td>
+	<td bgcolor="red">4</td>
+	<td bgcolor="red">8</td>
+       </tr>
+     </table>>
+  ];
+
+  s21 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="orange">1</td>
+	<td bgcolor="orange">5</td>
+	<td bgcolor="orange">9</td>
+       </tr>
+     </table>>
+  ];
+
+  s22 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="yellow">2</td>
+	<td bgcolor="yellow">6</td>
+	<td bgcolor="yellow">10</td>
+       </tr>
+     </table>>
+  ];
+
+  s23 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green">3</td>
+	<td bgcolor="green">7</td>
+	<td bgcolor="green">11</td>
+       </tr>
+     </table>>
+  ];
+
+}

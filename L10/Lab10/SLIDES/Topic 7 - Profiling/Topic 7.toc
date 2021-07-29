@@ -1,0 +1,6 @@
+\beamer@sectionintoc {2}{Viewing Processes Using \texttt {htop}}{3}{0}{1}
+\beamer@sectionintoc {3}{Benchmarking using \texttt {time}}{7}{0}{2}
+\beamer@sectionintoc {4}{Profiling using \texttt {gprof}}{10}{0}{3}
+\beamer@sectionintoc {5}{Source Code Annotation using \texttt {gcov}}{19}{0}{4}
+\beamer@sectionintoc {6}{Random Topic: File Permissions in Unix}{22}{0}{5}
+\beamer@sectionintoc {7}{Errata}{29}{0}{6}
