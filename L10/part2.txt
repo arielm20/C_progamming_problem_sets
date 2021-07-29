@@ -1,0 +1,15 @@
+1. find ./SLIDES/ -name *.tex
+2. find ./SLIDES/ -name *.tex -not -name Beamer\ Template.tex
+3. find ./SLIDES/ -name *.tex | grep -c $
+4. find ./SLIDES/ -name *.tex -or -name *.pdf -or -name *.toc
+5. find ./SLIDES/Topic\ 6\ -\ Functions\ and\ Arrays\ in\ C/ -name *.tex -or -name *.pdf -or -name *.toc
+6. find ./SLIDES/ -type f -name *~ -delete
+7. find ./SLIDES/ -type f -name "#*#" -delete
+8. find ./SLIDES/ -type f -name ?????????? -name *.png -or -name ?????????? -name *.jpg -or -name ?????????? -name *.bmp -or -name ?????????? -name *.webp >> goodFiles.txt
+9. find ./SLIDES/ -type f -name *.log >> allTheLogs.log
+10. find ./SLIDES/ -type f -name *C*.aux | sed -n '10 p'
+11. find ./SLIDES/ -type f -name *.sh | xargs chmod +x
+12. grep -rnw './SLIDES/' -e ' and ' | head -10 >> ./allheads/txt
+13. find ./SLIDES/ -type f -name *.png -or -name *.jpg -or -name *.jpeg -or -name *.webp -exec cp "{}" ./image_backup \;
+14. cat filenames.txt
+15. find ./SLIDES/ -type f -name $(<< allTheGlobs.txt)

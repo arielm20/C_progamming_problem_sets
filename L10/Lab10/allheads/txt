@@ -1,0 +1,10 @@
+./SLIDES//Topic 6 - Functions and Arrays in C/Topic 4 - Arrays.tex:443:\item We also don't care about the constants $a$, $b$, and $c$.
+./SLIDES//Topic 6 - Functions and Arrays in C/Topic 6 - Functions and Arrays in C.tex:235:\item \textbf{Library} - files in which the functions specified in the header file are implemented. There are two main types: \textbf{Static} and \textbf{Dynamic} (see the next slide).
+./SLIDES//Topic 6 - Functions and Arrays in C/Topic 6 - Functions and Arrays in C.tex:331:\item This emulates the way other programming languages use \textbf{packages} and \textbf{modules}.
+./SLIDES//Topic 12 - Data Structures in C/Topic 12 - Data Structures.tex:151:\item This creates a new data type, \texttt{customer}, with the \textbf{fields} \texttt{name}, \texttt{email} and \texttt{pinball}.
+./SLIDES//Topic 12 - Data Structures in C/Topic 12 - Data Structures.tex:637:\item By convention, we call these \textbf{left} and \textbf{right}
+./SLIDES//Topic 12 - Data Structures in C/Topic 12 - Data Structures.tex:649:\item i.e., both the nodes pointed to by \texttt{left} and \texttt{right} can be rightly considered roots of their own trees.  
+./SLIDES//Topic 8 - Pointers in C/code/ex07_19.c:34: * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *
+./SLIDES//Topic 8 - Pointers in C/code/ex07_26.c:33: * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *
+./SLIDES//Topic 8 - Pointers in C/code/ex07_20.c:31: * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *
+./SLIDES//Topic 8 - Pointers in C/Topic 8 - Pointers in C.tex:176:\item \texttt{NULL} is a \textbf{symbolic constant}, which is defined in a number of header files (such as \texttt{stdio.h} and \texttt{ stddef.h})
