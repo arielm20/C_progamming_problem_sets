@@ -1,0 +1,29 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: change dir
+      run: cd ./L09
+    - name: Install prerequisites
+      run: sudo apy-get install doxygen
+    - name: make student.o
+      run: make student.o
+    - name: make course.o
+      run: make course.o
+    - name: make Doxyfile
+      run: make Doxyfile
+    - name: make docs
+      run: make docs
+    - name: make main
+      run: make main
