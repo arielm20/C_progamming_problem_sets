@@ -1,1 +1,7 @@
-1. 
+1. sed -i 's/backwards/forwards/g' *.txt
+2. sed -i -E 's/^\\includegraphics\[.+\]\{.+\}//g' *.tex
+3. egrep -lRZ -E '\\begin\{itemize\}' . | xargs -0 -l sed -i -e 's/\begin{itemize}/\begin{enumerate}/g'
+4. sed -i -E 's/^\(\.\)$/\[citation needed\]\1/'
+5. find . -type f -name *.tex | sed -n '100, 300 p' | xargs -0 -l sed -i -e 's/*ing/a gerund/g' *.tex
+6. find . -type f -name *.log | sed -n '15, 18d'
+7. 
