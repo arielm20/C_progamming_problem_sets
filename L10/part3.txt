@@ -1,1 +1,10 @@
-1. 
+1. grep -R --include="*.tex" "\includegraphics" ./SLIDES/
+2. grep -R --include="*.tex" -E '\\begin{\w+}$' ./SLIDES/
+3. grep -R -E 'arbitrary\b|bitwidth\b|pointer\b' ./SLIDES/
+4. grep -R --include="*S*.tex" -E 'am\b|was\b|be\b|have\b been\b|had\b been\b|will\b have\b been\b' .
+5. grep -R -E '\\begin{itemize}$|^\\item' .
+6. grep -R -E '(pointer|{pointer}) .(R*|S*|T*|L*|N*|E*)' .
+7. grep -R -E '\s\w(aa|ee|ii|oo|uu|yy)\w\s' .
+8. grep -R -Pzo 'if\s\(\w+\)\s\{\n.+\n\}' .
+9. grep -R -E '^(int|void|float|char)\smain\s(.+)\s{' .
+10. grep -R -E '\d+\s[+-/*]\s\d+' .
