@@ -4,4 +4,7 @@
 4. sed -i -E 's/^\(\.\)$/\[citation needed\]\1/'
 5. find . -type f -name *.tex | sed -n '100, 300 p' | xargs -0 -l sed -i -e 's/*ing/a gerund/g' *.tex
 6. find . -type f -name *.log | sed -n '15, 18d'
-7. 
+7. find . -type f -name *.tex -exec sed -i 's/\*\*\w+\*\*/_\w+_/g' {} \;
+8. find . -name *.tex -or -name *.txt -exec sed -i -E 's/(a|A|e|E|i|I|o|O|u|U|y)//g' {} \;
+9. find . -name *.tex -exec sed -i -E 's/(\#.+|[\][^%].+)//g' {} \;
+10. find . -name *.tex -or -name *.txt -exec sed -i -E 's/(\.|,|\?|:|;|'|")/\!/g' {} \;
