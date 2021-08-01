@@ -1,0 +1,5 @@
+\beamer@sectionintoc {2}{Working with Pointers}{3}{0}{1}
+\beamer@sectionintoc {3}{Pointer Operations!}{9}{0}{2}
+\beamer@sectionintoc {4}{The Wonderful World of Passing by Reference}{17}{0}{3}
+\beamer@sectionintoc {5}{Pointer Expressions and Arithmetic}{24}{0}{4}
+\beamer@sectionintoc {6}{Dynamic Memory Allocation}{34}{0}{5}

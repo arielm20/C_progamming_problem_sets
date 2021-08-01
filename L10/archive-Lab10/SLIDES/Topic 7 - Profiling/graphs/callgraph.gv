@@ -1,0 +1,14 @@
+digraph A {
+	start -> main [label="1/1"]
+	start -> on_exit [label="1/2"]
+	start -> exit [label="1/1"]
+	main -> report [label="1/1"]
+	report -> timelocal [label="8/8"]
+	report -> print [label="1/1"]
+	report -> fgets [label="9/9"]
+	report -> strncmp [label="12/34"]
+	report -> lookup [label="8/8"]
+	report -> fopen [label="1/1"]
+	report -> chewtime [label="8/8"]
+	report -> skipspace [label="8/16"]
+}

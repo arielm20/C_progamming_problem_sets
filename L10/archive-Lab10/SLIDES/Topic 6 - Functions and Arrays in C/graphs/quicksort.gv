@@ -1,0 +1,292 @@
+digraph a {
+
+  node [shape=plaintext]
+
+  {rank = same s1 }
+  {rank = same }
+  {rank = same }
+  {rank = same }
+  {rank = same }
+
+  s1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">6</td>
+	<td bgcolor="lightcoral" port="1">4</td>
+	<td bgcolor="lawngreen" port="2">7</td>
+	<td bgcolor="lightcoral" port="3">1</td>
+	<td bgcolor="lawngreen" port="4">7</td>
+	<td bgcolor="lightcoral" port="5">3</td>
+	<td bgcolor="lawngreen" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+s1 -> {t1 t2 t3}
+
+
+  subgraph t {
+
+  {rank = same t1 t2 t3}
+
+  t1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="1">4</td>
+	<td bgcolor="lightcoral" port="3">1</td>
+	<td bgcolor="lightcoral" port="5">3</td>
+       </tr>
+     </table>>
+  ];
+
+  t2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">6</td>
+       </tr>
+     </table>>
+  ];
+
+t2 -> t22 -> t222 [weight = 10000]
+
+  t22 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">6</td>
+       </tr>
+     </table>>
+  ];
+
+  t222 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="0">6</td>
+       </tr>
+     </table>>
+  ];
+
+  t3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2">7</td>
+	<td bgcolor="lawngreen" port="4">7</td>
+	<td bgcolor="lawngreen" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+	
+  }
+
+t1 -> {u1 u2 u3}
+
+  subgraph u {
+
+{rank = same u1 u2 u3}
+
+  u1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="3">1</td>
+	<td bgcolor="lawngreen" port="5">3</td>
+       </tr>
+     </table>>
+  ];
+
+  u2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="1">4</td>
+       </tr>
+     </table>>
+  ];
+
+u2 -> u22 [weight = 10000] 
+
+  u22 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="1">4</td>
+       </tr>
+     </table>>
+  ];
+
+  u3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="1"> </td>
+       </tr>
+     </table>>
+  ];
+
+u3 -> u33 [weight = 10000] 
+
+  u33 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="1"> </td>
+       </tr>
+     </table>>
+  ];
+	
+  }
+
+u1 -> {v1 v2 v3}
+
+subgraph v {
+
+  {rank = same v1 v2 v3}
+
+  v1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="3"> </td>
+       </tr>
+     </table>>
+  ];
+
+  v2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="3">1</td>
+       </tr>
+     </table>>
+  ];
+
+  v3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="5">3</td>
+       </tr>
+     </table>>
+  ];
+	
+  }
+
+  t3 -> {w1 w2 w3}
+
+  subgraph w {
+  {rank = same w1 w2 w3}
+
+  w1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2"> </td>
+       </tr>
+     </table>>
+  ];
+
+  w11 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2"> </td>
+       </tr>
+     </table>>
+  ];
+
+  w1 -> w11 [weight = 10000]
+
+  w2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2">7</td>
+       </tr>
+     </table>>
+  ];
+
+  w2 -> w22 [weight = 10000]
+
+  w22 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2">7</td>
+       </tr>
+     </table>>
+  ];
+
+  w3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="4">7</td>
+	<td bgcolor="lawngreen" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+	
+  }
+
+w3 -> {x1 x2 x3}
+
+  subgraph x {
+  {rank = same x1 x2 x3}
+
+  x1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2"> </td>
+       </tr>
+     </table>>
+  ];
+
+  x2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2">7</td>
+       </tr>
+     </table>>
+  ];
+
+  x3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="lightblue" port="2">9</td>
+       </tr>
+     </table>>
+  ];
+	
+  }
+
+v2:s -> y1:0:n
+v3:s -> y1:1:n
+u22:s -> y1:2:n
+t222:s -> y1:4:n
+w22:s -> y1:3:n
+x2:s -> y1:5:n
+x3:s -> y1:6:n
+
+  y1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">3</td>
+	   <td bgcolor="green" port="2">4</td>
+           <td bgcolor="green" port="4">6</td>
+	   <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="5">7</td>
+           <td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+}

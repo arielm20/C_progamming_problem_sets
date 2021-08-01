@@ -1,0 +1,8 @@
+\beamer@sectionintoc {2}{Stream Redirection}{3}{0}{1}
+\beamer@sectionintoc {3}{Glob Patterns}{8}{0}{2}
+\beamer@sectionintoc {4}{Searching For Files}{11}{0}{3}
+\beamer@sectionintoc {5}{Regular Expressions!}{13}{0}{4}
+\beamer@sectionintoc {6}{Advanced Searching}{20}{0}{5}
+\beamer@sectionintoc {7}{Various Applications}{27}{0}{6}
+\beamer@sectionintoc {8}{Documentation}{29}{0}{7}
+\beamer@sectionintoc {9}{Errata}{36}{0}{8}

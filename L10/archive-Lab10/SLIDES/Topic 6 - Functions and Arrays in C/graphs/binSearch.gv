@@ -1,0 +1,216 @@
+digraph a {
+
+  node [shape=plaintext]
+
+  {rank = same s1 }
+  {rank = same }
+  {rank = same }
+  {rank = same }
+  {rank = same }
+
+// [2, 2, 11, 15, 16, 19, 27, 31, 34, 36, 37, 43, 47, 48, 49, 54, 61, 62, 63, 67, 71, 73, 78, 82, 84, 90, 93, 94, 96, 97]
+
+s1:n -> s1:n [color = "white" label = "Binary Search for x = 84"]
+s1:e -> s1:e [color = "white" label = "a = 0\nb = 29\nm = 14"]
+
+  s1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="red" port="a">2</td>
+	<td>2</td>
+	<td>11</td>
+	<td>15</td>
+	<td>16</td>
+	<td>19</td>
+	<td>27</td>
+	<td>31</td>
+	<td>34</td>
+	<td>36</td>
+	<td>37</td>
+	<td>43</td>
+	<td>47</td>
+	<td>48</td>
+	<td bgcolor = "lightblue" port="m">49</td>
+	<td>54</td>
+	<td>61</td>
+	<td>62</td>
+	<td>63</td>
+	<td>67</td>
+	<td>71</td>
+	<td>73</td>
+	<td>78</td>
+	<td>82</td>
+	<td>84</td>
+	<td>90</td>
+	<td>93</td>
+	<td>94</td>
+	<td>96</td>
+	<td bgcolor="blue" port="b">97</td>
+       </tr>
+     </table>>
+  ];
+
+s1:w -> s2:w
+s2:e -> s2:e [color = "white" label = "a = 15\nb = 29\nm = 22"]
+
+  s2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">11</td>
+	<td bgcolor="grey">15</td>
+	<td bgcolor="grey">16</td>
+	<td bgcolor="grey">19</td>
+	<td bgcolor="grey">27</td>
+	<td bgcolor="grey">31</td>
+	<td bgcolor="grey">34</td>
+	<td bgcolor="grey">36</td>
+	<td bgcolor="grey">37</td>
+	<td bgcolor="grey">43</td>
+	<td bgcolor="grey">47</td>
+	<td bgcolor="grey">48</td>
+	<td bgcolor="grey">49</td>
+	<td bgcolor = "red" port="a">54</td>
+	<td>61</td>
+	<td>62</td>
+	<td>63</td>
+	<td>67</td>
+	<td>71</td>
+	<td>73</td>
+	<td bgcolor = "lightblue" port="m">78</td>
+	<td>82</td>
+	<td>84</td>
+	<td>90</td>
+	<td>93</td>
+	<td>94</td>
+	<td>96</td>
+	<td bgcolor="blue" port="b">97</td>
+       </tr>
+     </table>>
+  ];
+
+s2:w -> s3:w
+s3:e -> s3:e [color = "white" label = "a = 23\nb = 29\nm = 26"]
+
+  s3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">11</td>
+	<td bgcolor="grey">15</td>
+	<td bgcolor="grey">16</td>
+	<td bgcolor="grey">19</td>
+	<td bgcolor="grey">27</td>
+	<td bgcolor="grey">31</td>
+	<td bgcolor="grey">34</td>
+	<td bgcolor="grey">36</td>
+	<td bgcolor="grey">37</td>
+	<td bgcolor="grey">43</td>
+	<td bgcolor="grey">47</td>
+	<td bgcolor="grey">48</td>
+	<td bgcolor="grey">49</td>
+	<td bgcolor="grey">54</td>
+	<td bgcolor="grey">61</td>
+	<td bgcolor="grey">62</td>
+	<td bgcolor="grey">63</td>
+	<td bgcolor="grey">67</td>
+	<td bgcolor="grey">71</td>
+	<td bgcolor="grey">73</td>
+	<td bgcolor="grey">78</td>
+	<td bgcolor = "red" port="a" >82</td>
+	<td>84</td>
+	<td>90</td>
+	<td bgcolor = "lightblue" port="m">93</td>
+	<td>94</td>
+	<td>96</td>
+	<td bgcolor="blue" port="b">97</td>
+       </tr>
+     </table>>
+  ];
+
+s3:w -> s4:w
+s4:e -> s4:e [color = "white" label = "a = 23\nb = 25\nm = 24"]
+
+  s4 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">11</td>
+	<td bgcolor="grey">15</td>
+	<td bgcolor="grey">16</td>
+	<td bgcolor="grey">19</td>
+	<td bgcolor="grey">27</td>
+	<td bgcolor="grey">31</td>
+	<td bgcolor="grey">34</td>
+	<td bgcolor="grey">36</td>
+	<td bgcolor="grey">37</td>
+	<td bgcolor="grey">43</td>
+	<td bgcolor="grey">47</td>
+	<td bgcolor="grey">48</td>
+	<td bgcolor="grey">49</td>
+	<td bgcolor="grey">54</td>
+	<td bgcolor="grey">61</td>
+	<td bgcolor="grey">62</td>
+	<td bgcolor="grey">63</td>
+	<td bgcolor="grey">67</td>
+	<td bgcolor="grey">71</td>
+	<td bgcolor="grey">73</td>
+	<td bgcolor="grey">78</td>
+	<td bgcolor = "red" port="a" >82</td>
+	<td bgcolor = "lightblue" port="m">84</td>
+	<td bgcolor="blue" port="b">90</td>
+	<td bgcolor="grey">93</td>
+	<td bgcolor="grey">94</td>
+	<td bgcolor="grey">96</td>
+	<td bgcolor="grey">97</td>
+       </tr>
+     </table>>
+  ];
+
+s4 -> s5
+
+  s5 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">2</td>
+	<td bgcolor="grey">11</td>
+	<td bgcolor="grey">15</td>
+	<td bgcolor="grey">16</td>
+	<td bgcolor="grey">19</td>
+	<td bgcolor="grey">27</td>
+	<td bgcolor="grey">31</td>
+	<td bgcolor="grey">34</td>
+	<td bgcolor="grey">36</td>
+	<td bgcolor="grey">37</td>
+	<td bgcolor="grey">43</td>
+	<td bgcolor="grey">47</td>
+	<td bgcolor="grey">48</td>
+	<td bgcolor="grey">49</td>
+	<td bgcolor="grey">54</td>
+	<td bgcolor="grey">61</td>
+	<td bgcolor="grey">62</td>
+	<td bgcolor="grey">63</td>
+	<td bgcolor="grey">67</td>
+	<td bgcolor="grey">71</td>
+	<td bgcolor="grey">73</td>
+	<td bgcolor="grey">78</td>
+	<td bgcolor = "grey" port="a" >82</td>
+	<td bgcolor = "green" port="m">84</td>
+	<td bgcolor="grey" port="b">90</td>
+	<td bgcolor="grey">93</td>
+	<td bgcolor="grey">94</td>
+	<td bgcolor="grey">96</td>
+	<td bgcolor="grey">97</td>
+       </tr>
+     </table>>
+  ];
+}

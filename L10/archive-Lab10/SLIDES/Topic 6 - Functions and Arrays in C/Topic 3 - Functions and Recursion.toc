@@ -1,0 +1,6 @@
+\beamer@sectionintoc {2}{The Grammar of Functions}{3}{0}{1}
+\beamer@sectionintoc {3}{Header Files, Libraries, and The Existential Plight of Humanity}{8}{0}{2}
+\beamer@sectionintoc {4}{Functions: How Do They REALLY Work?}{19}{0}{3}
+\beamer@sectionintoc {5}{An Example of the Call Stack}{24}{0}{4}
+\beamer@sectionintoc {6}{Storage Classes, Scoping and a Few Other Things}{29}{0}{5}
+\beamer@sectionintoc {7}{Recursion}{38}{0}{6}

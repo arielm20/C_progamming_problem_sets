@@ -1,0 +1,369 @@
+digraph a {
+
+  node [shape=plaintext]
+
+  {rank = same s1 t1 u1 v1 w1 x1}
+  {rank = same s2 t2 u2 v2 w2 x2}
+  {rank = same t3 u3 v3 w3 x3}
+  {rank = same u4 w4 x4}
+  {rank = same w5 x5}
+  {rank = same w6}
+
+  s1 -> s2 [color = white weight=10000]
+  t1 -> t2 -> t3 [color = white weight=10000]
+  u1 -> u2 -> u3 -> u4 [color = white weight=10000]
+  v1 -> v2 -> v3 [color = white weight=10000]
+  w1 -> w2 -> w3 -> w4 -> w5 -> w6 [color = white weight=10000]
+  x1 -> x2 -> x3 -> x4 -> x5 [color = white weight=10000]
+
+  s1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="lightblue" port="0"><font color="blue">9</font></td><td bgcolor="lightblue" port="1"><font color="blue">4</font></td><td>7</td><td>1</td><td>7</td><td>3</td><td>6</td></tr>
+     </table>>
+  ];
+
+// <font color="blue"> </font>
+
+s1:0:s -> s2:1:n [color = "red"]
+s1:1:s -> s2:0:n [color = "red"]
+
+  s2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">4</td><td  bgcolor="green" port="1">9</td><td>7</td><td>1</td><td>7</td><td>3</td><td>6</td></tr>
+     </table>>
+  ];
+
+  t1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" >4</td><td  bgcolor="green" port="0"><font color="blue">9</font></td><td bgcolor="lightblue" port="1"><font  color="blue">7</font></td><td>1</td><td>7</td><td>3</td><td>6</td></tr>
+     </table>>
+  ];
+
+t1:0:s -> t2:1:n [color = "red"]
+t1:1:s -> t2:0:n [color = "red"]
+
+  t2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green"><font color="blue">4</font></td>
+	   <td bgcolor="lightblue" port="0"><font color="blue">7</font></td>
+	   <td bgcolor="green" port="1">9</td>
+           <td>1</td>
+           <td>7</td>
+           <td>3</td>
+           <td>6</td>
+       </tr>
+     </table>>
+  ];
+
+t2 -> t3
+
+  t3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green">4</td>
+	   <td bgcolor="green" port="0">7</td>
+	   <td bgcolor="green" port="1">9</td>
+           <td>1</td>
+           <td>7</td>
+           <td>3</td>
+           <td>6</td>
+       </tr>
+     </table>>
+  ];
+
+  u1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">4</td>
+	   <td bgcolor="green" port="1">7</td>
+	   <td bgcolor="green" port="2"><font color="blue">9</font></td>
+           <td bgcolor="lightblue" port="3"><font color="blue">1</font></td>
+           <td port="4">7</td>
+           <td port="5">3</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+u1:3:s -> u2:2:n [color = "red"]
+u1:2:s -> u2:3:n [color = "red"]
+
+  u2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">4</td>
+	   <td bgcolor="green" port="1"><font color="blue">7</font></td>
+	   <td bgcolor="lightblue" port="2"><font color="blue">1</font></td>
+           <td bgcolor="green" port="3">9</td>
+           <td port="4">7</td>
+           <td port="5">3</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+u2:2:s -> u3:1:n [color = "red"]
+u2:1:s -> u3:2:n [color = "red"]
+
+  u3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0"><font color="blue">4</font></td>
+	   <td bgcolor="lightblue" port="1"><font color="blue">1</font></td>
+	   <td bgcolor="green" port="2">7</td>
+           <td bgcolor="green" port="3">9</td>
+           <td port="4">7</td>
+           <td port="5">3</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+u3:1:s -> u4:0:n [color = "red"]
+u3:0:s -> u4:1:n [color = "red"]
+
+  u4 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">4</td>
+	   <td bgcolor="green" port="2">7</td>
+           <td bgcolor="green" port="3">9</td>
+           <td port="4">7</td>
+           <td port="5">3</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+  v1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">4</td>
+	   <td bgcolor="green" port="2">7</td>
+           <td bgcolor="green" port="3"><font color="blue">9</font></td>
+           <td bgcolor="lightblue" port="4"><font color="blue">7</font></td>
+           <td port="5">3</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+v1:4:s -> v2:3:n [color = "red"]
+v1:3:s -> v2:4:n [color = "red"]
+
+  v2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">4</td>
+	   <td bgcolor="green" port="2"><font color="blue">7</font></td>
+           <td bgcolor="lightblue" port="3"><font color="blue">7</font></td>
+           <td bgcolor="green" port="4">9</td>
+           <td port="5">3</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+v2 -> v3
+
+  v3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">4</td>
+	   <td bgcolor="green" port="2">7</td>
+           <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="4">9</td>
+           <td port="5">3</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+  w1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">4</td>
+	   <td bgcolor="green" port="2">7</td>
+           <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="4"><font color="blue">9</font></td>
+           <td bgcolor="lightblue" port="5"><font color="blue">3</font></td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+w1:5:s -> w2:4:n [color = "red"]
+w1:4:s -> w2:5:n [color = "red"]
+
+  w2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">4</td>
+	   <td bgcolor="green" port="2">7</td>
+           <td bgcolor="green" port="3"><font color="blue">7</font></td>
+	   <td bgcolor="lightblue" port="4"><font color="blue">3</font></td>
+           <td bgcolor="green" port="5">9</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+w2:4:s -> w3:3:n [color = "red"]
+w2:3:s -> w3:4:n [color = "red"]
+
+  w3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">4</td>
+	   <td bgcolor="green" port="2"><font color="blue">7</font></td>
+	   <td bgcolor="lightblue" port="3"><font color="blue">3</font></td>
+           <td bgcolor="green" port="4">7</td>
+           <td bgcolor="green" port="5">9</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+w3:3:s -> w4:2:n [color = "red"]
+w3:2:s -> w4:3:n [color = "red"]
+
+  w4 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1"><font color="blue">4</font></td>
+	   <td bgcolor="lightblue" port="2"><font color="blue">3</font></td>
+	   <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="4">7</td>
+           <td bgcolor="green" port="5">9</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+w4:2:s -> w5:1:n [color = "red"]
+w4:1:s -> w5:2:n [color = "red"]
+
+  w5 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0"><font color="blue">1</font></td>
+	   <td bgcolor="lightblue" port="1"><font color="blue">3</font></td>
+	   <td bgcolor="green" port="2">4</td>
+	   <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="4">7</td>
+           <td bgcolor="green" port="5">9</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+w5 -> w6
+
+  w6 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">3</td>
+	   <td bgcolor="green" port="2">4</td>
+	   <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="4">7</td>
+           <td bgcolor="green" port="5">9</td>
+           <td port="6">6</td>
+       </tr>
+     </table>>
+  ];
+
+  x1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">3</td>
+	   <td bgcolor="green" port="2">4</td>
+	   <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="4">7</td>
+           <td bgcolor="green" port="5"><font color="blue">9</font></td>
+           <td bgcolor="lightblue" port="6"><font color="blue">6</font></td>
+       </tr>
+     </table>>
+  ];
+
+x1:5:s -> x2:6:n [color = "red"]
+x1:6:s -> x2:5:n [color = "red"]
+
+  x2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">3</td>
+	   <td bgcolor="green" port="2">4</td>
+	   <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="4"><font color="blue">7</font></td>
+           <td bgcolor="lightblue" port="5"><font color="blue">6</font></td>
+           <td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+x2:4:s -> x3:5:n [color = "red"]
+x2:5:s -> x3:4:n [color = "red"]
+
+  x3 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">3</td>
+	   <td bgcolor="green" port="2">4</td>
+	   <td bgcolor="green" port="3"><font color="blue">7</font></td>
+           <td bgcolor="lightblue" port="4"><font color="blue">6</font></td>
+           <td bgcolor="green" port="5">7</td>
+           <td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+x3:3:s -> x4:4:n [color = "red"]
+x3:4:s -> x4:3:n [color = "red"]
+
+  x4 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">3</td>
+	   <td bgcolor="green" port="2"><font color="blue">4</font></td>
+           <td bgcolor="lightblue" port="3"><font color="blue">6</font></td>
+	   <td bgcolor="green" port="4">7</td>
+           <td bgcolor="green" port="5">7</td>
+           <td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+x4 -> x5
+
+  x5 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr><td bgcolor="green" port="0">1</td>
+	   <td bgcolor="green" port="1">3</td>
+	   <td bgcolor="green" port="2">4</td>
+           <td bgcolor="green" port="4">6</td>
+	   <td bgcolor="green" port="3">7</td>
+           <td bgcolor="green" port="5">7</td>
+           <td bgcolor="green" port="6">9</td>
+       </tr>
+     </table>>
+  ];
+
+}

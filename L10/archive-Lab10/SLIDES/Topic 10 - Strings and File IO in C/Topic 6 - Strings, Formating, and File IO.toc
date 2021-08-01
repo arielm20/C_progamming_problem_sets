@@ -1,0 +1,6 @@
+\beamer@sectionintoc {2}{Building Some Character}{3}{0}{1}
+\beamer@sectionintoc {3}{Ternary Expressions}{8}{0}{2}
+\beamer@sectionintoc {4}{Destringing and Restringing}{10}{0}{3}
+\beamer@sectionintoc {5}{String Manipulations}{19}{0}{4}
+\beamer@sectionintoc {6}{Advanced Formatting}{29}{0}{5}
+\beamer@sectionintoc {7}{Permanent Memory Interaction}{46}{0}{6}

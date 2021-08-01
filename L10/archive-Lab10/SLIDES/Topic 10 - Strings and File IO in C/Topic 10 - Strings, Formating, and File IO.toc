@@ -1,0 +1,4 @@
+\beamer@sectionintoc {2}{Destringing and Restringing}{3}{0}{1}
+\beamer@sectionintoc {3}{String Manipulations}{11}{0}{2}
+\beamer@sectionintoc {4}{Advanced Formatting}{17}{0}{3}
+\beamer@sectionintoc {5}{Permanent Memory Interaction}{31}{0}{4}

@@ -1,0 +1,117 @@
+digraph a {
+
+  node [shape=plaintext nodesep=0.5 ranksep = 0.5]
+
+  s1 -> s2 [weight=10000]
+
+  s1 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="red">0</td>
+	<td bgcolor="orange">1</td>
+	<td bgcolor="yellow">2</td>
+	<td bgcolor="green">3</td>
+	<td bgcolor="blue">4</td>
+	<td bgcolor="purple">5</td>
+	<td bgcolor="red">6</td>
+	<td bgcolor="orange">7</td>
+	<td bgcolor="yellow">8</td>
+	<td bgcolor="green">9</td>
+	<td bgcolor="blue">10</td>
+	<td bgcolor="purple">11</td>
+       </tr>
+     </table>>
+  ];
+
+s1:n -> s1:n [color = "white" label = "h = 5"]
+
+  s2 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="red">0</td>
+	<td bgcolor="orange">1</td>
+	<td bgcolor="yellow">2</td>
+	<td bgcolor="green">3</td>
+	<td bgcolor="blue">4</td>
+	<td bgcolor="purple">5</td>
+       </tr><tr>
+	<td bgcolor="red" port="0">6</td>
+	<td bgcolor="orange" port="1">7</td>
+	<td bgcolor="yellow" port="2">8</td>
+	<td bgcolor="green" port="3">9</td>
+	<td bgcolor="blue" port="4">10</td>
+	<td bgcolor="purple" port="5">11</td>
+       </tr>
+     </table>>
+  ];
+
+s2:0:s -> s20:n
+s2:1:s -> s21:n
+s2:2:s -> s22:n
+s2:3:s -> s23:n
+s2:4:s -> s24:n
+s2:5:s -> s25:n
+
+  s20 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="red">0</td>
+	<td bgcolor="red" port="0">6</td>
+       </tr>
+     </table>>
+  ];
+
+  s21 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="orange">1</td>
+	<td bgcolor="orange" port="1">7</td>
+       </tr>
+     </table>>
+  ];
+
+  s22 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="yellow">2</td>
+	<td bgcolor="yellow" port="2">8</td>
+       </tr>
+     </table>>
+  ];
+
+  s23 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="green">3</td>
+	<td bgcolor="green" port="3">9</td>
+       </tr>
+     </table>>
+  ];
+
+  s24 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="blue">4</td>
+	<td bgcolor="blue" port="4">10</td>
+       </tr>
+     </table>>
+  ];
+
+  s25 [
+   label=<
+     <table border="0" cellborder="1" cellspacing="0">
+       <tr>
+	<td bgcolor="purple">5</td>
+	<td bgcolor="purple" port="5">11</td>
+       </tr>
+     </table>>
+  ];
+
+}

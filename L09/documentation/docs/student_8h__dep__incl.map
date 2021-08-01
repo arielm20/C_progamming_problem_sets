@@ -1,0 +1,6 @@
+<map id="src/student.h" name="src/student.h">
+<area shape="rect" id="node2" href="$course_8h.html" title="header file for course.c " alt="" coords="61,80,156,107"/>
+<area shape="rect" id="node5" href="$student_8c.html" title="functions for generating students to be enrolled in a course " alt="" coords="181,80,279,107"/>
+<area shape="rect" id="node3" href="$course_8c.html" title="functions for enrolling student in a course " alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="main function that generates a student name and enrolls them in a course " alt="" coords="125,155,207,181"/>
+</map>

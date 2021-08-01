@@ -1,0 +1,7 @@
+\beamer@sectionintoc {2}{Getting Started}{3}{0}{1}
+\beamer@sectionintoc {3}{Simple Input/Output}{12}{0}{2}
+\beamer@sectionintoc {4}{Fundamental Data Types}{19}{0}{3}
+\beamer@sectionintoc {5}{More Memory Concepts}{21}{0}{4}
+\beamer@sectionintoc {6}{Operator Roundup}{23}{0}{5}
+\beamer@sectionintoc {7}{Selective Structures}{28}{0}{6}
+\beamer@sectionintoc {8}{Iterative Structures}{35}{0}{7}

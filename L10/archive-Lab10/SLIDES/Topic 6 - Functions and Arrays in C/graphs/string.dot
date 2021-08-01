@@ -1,0 +1,4 @@
+digraph a {
+	node [shape = record, height = .1]
+	Memory[label= " ... | 'b' | 'a' | 'r' | '\\0' | '\\0' | '\\0' | '\\0' | '\\0' | '\\0' | '\\0' | ... " ];
+}
