@@ -10,5 +10,5 @@
 5. make main
 
 **Operating Instructions**: Open index.html to see doxygen documentation.  
-**Troubleshooting**: Review code and make changes accordingly.
+**Troubleshooting**: Review code and make changes accordingly.  
 **changelog**: See commit history.  
