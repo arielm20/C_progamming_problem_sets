@@ -1,10 +1,21 @@
-
+/** 
+   * @file main.c
+   * @author Ariel Motsenyat
+   * @date 08/01/2021
+   * @brief main function that generates a student name and enrolls them in a course
+   */
 #include <stdlib.h> 
 #include <stdio.h>
 #include <string.h>
 #include "time.h"
 #include "course.h"
-
+/**  \brief allocates course code and name to name, and code integers
+ * enrolls random student to the course.
+ * calculates the top student in the course and prints the total number 
+ * of passing student and their names.
+   * @return 0
+   * @note the functions and their code can be found in these files: course.h course.c student.h student.c
+   */
 int main()
 {
   srand((unsigned) time(NULL));

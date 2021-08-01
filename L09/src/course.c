@@ -1,3 +1,9 @@
+/** 
+   * @file course.c
+   * @author Ariel Motsenyat
+   * @date 08/01/2021
+   * @brief functions for enrolling student in a course
+   */
 #include "course.h"
 #include <stdlib.h>
 #include <stdio.h>
