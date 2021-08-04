@@ -2,14 +2,29 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct node {
-// Your code here
+struct Node {
+    char *name;
+    char *tea;
+    struct Node *right, *left;
 };
 
-typedef struct node Node;
-
-int depth(struct node *root);
-int dfs(struct node *root, char *tok);
+int depth(struct Node *root){
+    if (root == NULL){
+        return 0;
+    }else {
+        int lDepth = depth(root->left);
+        int rDepth = depth(root->right);
+ 
+        /* use the larger one */
+        if (lDepth > rDepth)
+            return (lDepth + 1);
+        else
+            return (rDepth + 1);
+    }
+}
+int dfs(struct Node *root, char *tok){
+    
+}
 
 /******************The binary tree***********************
  * The following is an illustration of the binary tree
@@ -95,7 +110,7 @@ int main() {
     
     printf("Depth First Search for : Ana\n");
     printf("result: %d\n", dfs(root, "Ana"));
-    // expected result is 4
+    // expected result is 6
     
     printf("Depth First Search for : Julius Ceasar\n");
     printf("result: %d\n", dfs(root, "Julius Ceasar"));
