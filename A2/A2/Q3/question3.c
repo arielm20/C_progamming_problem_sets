@@ -4,7 +4,18 @@
 #include <string.h>
 #include <stdlib.h>
 
-int simpleParse(const char *exp);
+int simpleParse(const char *exp){
+	int i;
+	int sum = 0;
+	for (i=0;i!='\0';i++){
+		if (exp[i]=='+'){
+			sum = (atoi(exp[i-2])+atoi(exp[i+2]));
+		}else if(exp[i]=='-'){
+			sum = atoi(exp[i-2]) - atoi(exp[i+2]);
+		}
+	}
+	return sum;
+}
 
 int main() {
     char exp1[] = "2 + 2";
