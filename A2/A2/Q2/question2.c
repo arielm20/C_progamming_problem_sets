@@ -2,8 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-void DMY_MonthDY(char *buffer, const char *str);
-void MonthDY_DMY(char *buffer, const char *str);
+void DMY_MonthDY(char *buffer, const char *str){
+    strcpy(buffer, str);
+}
+void MonthDY_DMY(char *buffer, const char *str){
+    strcpy(buffer, str);
+}
 
 int main(){
 char format1[12][11] = { "01/01/1970"
