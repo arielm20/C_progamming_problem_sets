@@ -23,7 +23,15 @@ int depth(struct Node *root){
     }
 }
 int dfs(struct Node *root, char *tok){
-    
+    if (root){
+        if (root->left){
+            dfs(root->left, tok);
+        }
+        if(root->right){
+            dfs(root->right, tok);
+        }
+    }
+    return 0;
 }
 
 /******************The binary tree***********************
@@ -48,7 +56,7 @@ int dfs(struct Node *root, char *tok){
 
 int main() {
     
-    Node *root = malloc(sizeof(Node));
+    struct Node *root = malloc(sizeof(Node));
     root->name = "Nicholas";
     root->tea = "Orange Pekoe with Lemon";
     root->left = malloc(sizeof(Node));
