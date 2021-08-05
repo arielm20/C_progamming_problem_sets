@@ -2,9 +2,65 @@
 #include<stdlib.h>
 #include<assert.h>
 
-struct node *element(struct node *dll, int i) ;
-struct node *add(struct node *dll, int i, int value) ;
-struct node *delete(struct node *dll, int i);
+struct node {
+    int value;
+    struct node* next;
+    struct node* prev;
+};
+
+struct node *element(struct node *dll, int i){
+    struct node* current = dll;
+    int count = 0;
+    int current_value = 0;
+    while (current != NULL) {
+        if (count == i)
+            current_value = current->value;
+        count++;
+        current = current->next;
+    }
+    assert(0);
+}
+struct node *add(struct node *dll, int i, int value){
+    int n, count;
+    struct node* new_node = (struct node*)malloc(sizeof(struct node));
+    if (i<0){
+        new_node->value = value;
+        new_node->next = dll;
+        new_node->prev = NULL;
+ 
+        if (dll != NULL)
+            dll->prev = new_node;
+ 
+        dll = new_node;
+    }else{
+        for (n = 1; new_node != NULL && n < i; n++){
+            new_node->value = value;
+            new_node->next = dll->next;
+            dll->next = new_node;
+            new_node->prev = dll; 
+        }
+        if (new_node->next != NULL){
+            new_node->next->prev = new_node;
+        }
+    }
+    assert(0);
+}
+struct node *delete(struct node *dll, int i){
+    struct node* current = dll;
+    int n;
+    for (n = 1; current != NULL && n < i; n++){
+        current = current->next;
+    }
+
+    if (current->next != NULL){
+        current->next->prev = current->prev;
+    }
+    if (current->prev != NULL){
+        current->prev->next = current->next;
+    }
+    free(current);
+    assert(0);
+}
 
 void printNode (struct node *dll) {
     if (dll != NULL) {
