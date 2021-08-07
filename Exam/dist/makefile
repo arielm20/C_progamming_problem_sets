@@ -20,6 +20,8 @@ Doxyfile :
 	doxygen -g
 
 docs : Doxyfile
+	mkdir docs
+	cd ./docs
 	doxygen Doxyfile
 
 clean : 
