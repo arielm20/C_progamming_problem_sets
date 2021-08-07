@@ -26,11 +26,12 @@ docs : Doxyfile
 
 profile :
 	gcc -pg src/tuxquest.c -o tuxquest
-	./tuxquest < testing/fullAdventure
-	gprof tuxquest > profilerResults.out
+	./tuxquest
+	gprof tuxquest < testing/fullAdventure > profilerResults.out
 
-coverage : testing/fullAdventure
-	gcc -fprofile -arcs -ftest -coverage tuxquest.c
+coverage : 
+	gcc -fprofile-arcs -ftest-coverage src/tuxquest.c
+	./a.out < testing/fullAdventure
 	gcov tuxquest.c
 
 clean : 
