@@ -3,11 +3,49 @@
 #include<string.h>
 
 void addItem (int which, InvNode **inventory){
-	// QUESTION 3 PART I GOES HERE!
+	if (which == 1){
+		//add goblin_loot
+		struct invNode *goblin_loot = malloc(sizeof(struct invNode));
+		goblin_loot->value = which;
+		goblin_loot->next = *inventory;
+		*inventory = goblin_loot;
+		if (inventory == NULL){
+			//inventory is empty, new item added to beginning
+			goblin_loot->next = NULL;
+		}
+	}else if (which == 2){
+		//add orc_loot
+		struct invNode *orc_loot = malloc(sizeof(struct invNode));
+		orc_loot->value = which;
+		orc_loot->next = *inventory;
+		*inventory = orc_loot;
+		if (inventory == NULL){
+			//inventory is empty, new item added to beginning
+			orc_loot->next = NULL;
+		}
+	}
+	
 }
 
 int sellItem(int number, InvNode **inventory){
-	// QUESTION 3 PART II GOES HERE!
+	if (*inventory == NULL){
+		return 0;
+	}
+	struct InvNode* temp = *inventory;
+	if (number == 0){
+		*inventory = temp->next;
+		free(temp);
+		return value;
+	}
+	for (int i=0; temp!=NULL && i<position-1; i++){
+		temp = temp->next;
+	}
+	if (temp == NULL || temp->next == NULL){
+		return 0;
+	}
+	struct InvNode *next = temp->next->next;
+	free(temp->next);
+	temp->next = next;
 }
 
 void displayInventory(InvNode *inventory, int number){
