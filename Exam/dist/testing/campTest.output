@@ -1,0 +1,56 @@
+>>> Welcome to TuxQuest <<<
+Your options are:
+- travel
+- status
+- quit
+>> 
+Available Locations are: 
+- Torvaldia Town (town)
+- The Goblin Camp (camp)
+- The Orc's Fortress (fort)
+- The Dragon's Cave (cave)
+>> 
+
+            (                 /"""/|
+             )              __o o c/
+            (  (              \=__/
+                )             ,'-'.
+          (    (  ,,      _.__|/ /|
+           ) /\ -((------((_|___/ |
+         (  // | (`'      ((  `'--|
+       _ -.;_/ \\--._      \\ \-._/.
+      (_;-// | \ \-'.\    <_,\_\`--'|
+      ( `.__ _  ___,')      <_,-'__,'
+       `'(_ )_)(_)_)'
+
+As you approach the goblin camp, a goblin
+says something rude about your beak.
+              .-""-.
+        |\   /      \   /|
+        | \ / =.  .= \ / |
+        \( \ (o)\/(o) / )/
+         \_, --/  \-- ,_/
+           /   \__/   \
+           \ \______/ /
+         ___\ V____V /___
+       /'    \      /    `\
+      /       '----'       \
+...
+To the death!!!
+Tux attacks! 4 damage!
+The goblin attacks! 3 damage!
+Tux attacks! 4 damage!
+The goblin attacks! 3 damage!
+Tux attacks! 4 damage!
+The goblin attacks! 3 damage!
+Tux attacks! 4 damage!
+The goblin attacks! 3 damage!
+Tux attacks! 4 damage!
+You emerge victorious!
+Gained 20 XP
+Gained 10 Gold
+Your options are:
+- travel
+- status
+- quit
+>> 
