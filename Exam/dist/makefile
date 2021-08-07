@@ -15,5 +15,12 @@ test :
 	diff testing/*.test testing/*.output
 	cd ./testing
 	rm *.test
+
+Doxyfile :
+	doxygen -g
+
+docs : Doxyfile
+	doxygen Doxyfile
+
 clean : 
 	rm -rf src/*.o *~ */*~ *.aux *.log *.out
