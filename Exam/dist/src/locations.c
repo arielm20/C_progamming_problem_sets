@@ -131,9 +131,48 @@ bool runEncounter (enum Area type, Player *tux) {
 	}
 	printf("...\nTo the death!!!\n");	
 	
-	// QUESTION 4 PART I GOES HERE! 	
+	// QUESTION 4 PART I GOES HERE! 
+	while (creature.HP>=0){
+		int damage_enemy = creature.HP-(tux->stats.ATK - creature.DEF);
+		printf("Tux attacks! %d damage!\n", damage_enemy);
+		if(tux->stats.ATK<creature.DEF){
+			printf("Tux attacks! Uh-Oh, no damage!");
+		}
+		int damage_tux = tux->stats.HP-(creature.ATK - tux->stats.DEF);
+		printf("The %s attacks! %d damage!\n", creature.NAME, damage_tux);
+		if(creature.ATK<tux->stats.DEF){
+			printf("The %s attacks! Ha Ha! No damage!\n", creature.NAME);
+		}
+	}	
 	
-	// QUESTION 4 PART II GOES HERE! 
+	// QUESTION 4 PART II GOES HERE!
+	if (tux->stats.HP<=0){
+		displayImage("images/death.ascii");
+	}else if (creature.HP<=0){
+		printf("You emerged victorious!");
+		tux->stats.XP+=creature.XP;
+		tux->gold+=(creature.XP/2);
+		while(tux->stats.XP>100){
+			tux->level+=1;
+			tux->stats.MAX_HP+=5;
+			tux->stats.HP=tux->stats.MAX_HP;
+			tux->stats.ATK+=1;
+			tux->stats.DEF+=1;
+			tux->stats.XP-=100;
+		}
+	}
+	bool i = true;
+	if(type==cave){
+		i = true; 
+	}else{
+		if(strcmp(creature.NAME, "goblin")==0){
+			addItem(1, &tux->inventory);
+		}else if(strcmp(creature.NAME, "orc")==0){
+			addItem(2, &tux->inventory);
+		}
+		i = false;
+	}
+	return i;
 }
 
 enum Area readTravelOption (char resp[50]) {
