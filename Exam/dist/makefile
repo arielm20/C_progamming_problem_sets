@@ -9,8 +9,11 @@ Exam.pdf :
 	pdflatex Exam.tex
 
 test : 
-	echo "Testing tuxquest"
-	# QUESTION 1 GOES HERE	
-	
+	echo "Testing tuxquest"	
+	chmod +x ./file_output.sh
+	./file_output.sh
+	diff testing/*.test testing/*.output
+	cd ./testing
+	rm *.test
 clean : 
 	rm -rf src/*.o *~ */*~ *.aux *.log *.out
