@@ -24,5 +24,14 @@ docs : Doxyfile
 	cd ./docs
 	doxygen Doxyfile
 
+profile :
+	gcc -pg src/tuxquest.c -o tuxquest
+	./tuxquest < testing/fullAdventure
+	gprof tuxquest > profilerResults.out
+
+coverage : testing/fullAdventure
+	gcc -fprofile -arcs -ftest -coverage tuxquest.c
+	gcov tuxquest.c
+
 clean : 
 	rm -rf src/*.o *~ */*~ *.aux *.log *.out
